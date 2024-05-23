@@ -16,34 +16,26 @@ export default function Navbar() {
           <NavigationMenu className="hidden lg:flex">
             <NavigationMenuList>
               <NavigationMenuItem>
-                <Link href="#about_me" legacyBehavior passHref>
+                <Link href="https://github.com/BrandonTuTwo2" legacyBehavior passHref>
                   <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                    About me
+                    Github
                   </NavigationMenuLink>
                 </Link>
               </NavigationMenuItem>
               <NavigationMenuItem>
-                <Link href="#projects" legacyBehavior passHref>
+                <Link href="https://www.linkedin.com/in/brandon-tu-9219a91b7/" legacyBehavior passHref>
                   <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                    Projects
+                    Linkedin
                   </NavigationMenuLink>
                 </Link>
               </NavigationMenuItem>
               <NavigationMenuItem>
-                <Link href="#experience" legacyBehavior passHref>
+                <Link href="mailto: bran.tu.work@gmail.com" legacyBehavior passHref>
                   <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                    Experience
+                    Email
                   </NavigationMenuLink>
                 </Link>
               </NavigationMenuItem>
-              <NavigationMenuItem>
-                <Link href="#resume" legacyBehavior passHref>
-                  <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                    Resume
-                  </NavigationMenuLink>
-                </Link>
-              </NavigationMenuItem>
-
             </NavigationMenuList>
           </NavigationMenu>
         </div>

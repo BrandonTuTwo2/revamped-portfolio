@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-key */
 'use client'
 
 import * as React from "react"
@@ -11,6 +12,7 @@ import {
 import Autoplay from "embla-carousel-autoplay"
 import { Card, CardTitle, CardContent } from "@/components/ui/card"
 import Image from "next/image";
+import { Badge } from "@/components/ui/badge"
 
 export default function Projects() {
     const plugin = React.useRef(
@@ -25,6 +27,7 @@ export default function Projects() {
         , 'Match/Simon says esque game I made for CIS4250'
         , 'A C# program that takes in a text file and replaces the user entered word with another word.']
     const projectLink = ['https://github.com/BrandonTuTwo2/will-it-rain-2', 'https://github.com/BrandonTuTwo2/HLTB-Chrome-Extension', 'https://github.com/bnguye11/CalCount', 'https://github.com/BrandonTuTwo2/Farkle', 'https://github.com/BrandonTuTwo2/MatchGame', 'https://github.com/BrandonTuTwo2/word-replacer']
+    const tags = [["Vue.js","Typescript","Vite","Netlify"],["React","Netlify","Node.js"],["Flutter","Dart"],["Javascript","HTML","CSS"],["Javascript","HTML","CSS"],["C#"]];
     return (
         <Carousel
             plugins={[plugin.current]}
@@ -40,6 +43,7 @@ export default function Projects() {
                                 <CardTitle className="text-center">
                                     <span className="text-4xl font-semibold ">{projectNames[index]}</span>
                                 </CardTitle>
+                                <div className="text-center">{tags[index].map(tag =><Badge className="mx-0.5">{tag}</Badge>)}</div>
                                 <CardContent className="aspect-square items-center justify-center p-6 text-center">
                                     <span>{projectDescription[index]}</span>
                                     <div className="flex justify-center items-center">
