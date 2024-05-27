@@ -36,7 +36,7 @@ const TimelineItem: React.FC<Props> = ({ title, date, place, desc, tags}) => {
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between">
+    <main id="rainy" className="flex min-h-screen flex-col items-center justify-between">
       <Navbar />
       <div id="about_me" className="grid grid-cols-2 grid-rows-1 gap-10 pl-80 pb-56">
         <div id="about_me_text">

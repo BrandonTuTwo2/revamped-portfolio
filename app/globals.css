@@ -77,7 +77,14 @@
   }
   body {
     @apply bg-background text-foreground;
-    background-image: url("../public/p3_bg.svg");
+    background-image: url("../public/p3_bg.svg");    
+    background-repeat: no-repeat;
+  }
+
+  #rainy {
+    background-image: url("../public/p4_bg.svg");    
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
   }
 
